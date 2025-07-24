@@ -1,7 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProvinciaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('lista-provincias');
-});
+Route::get('/', [ProvinciaController::class, 'listar']);
